@@ -14,7 +14,7 @@ echo -e "msgstr \"网络存储\"" >> feeds/luci/modules/luci-base/po/zh_Hans/bas
 
 
 ##配置IP
-sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.1.1/g' package/base-files/files/bin/config_generate
 
 ##
 rm -rf ./feeds/xiangfeidexiaohuo/theme/luci-theme-argon-18.06
@@ -40,7 +40,7 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/M
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci-nginx/Makefile
 
 ##更改主机名
-sed -i "s/hostname='.*'/hostname='EasyWrt'/g" package/base-files/files/bin/config_generate
+sed -i "s/hostname='.*'/hostname='RedmiAX6000'/g" package/base-files/files/bin/config_generate
 
 ##加入作者信息
 sed -i "s/DISTRIB_DESCRIPTION='*.*'/DISTRIB_DESCRIPTION='EasyWrt-$(date +%Y%m%d)'/g"  package/base-files/files/etc/openwrt_release
